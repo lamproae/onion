@@ -19,7 +19,7 @@ SET(ONION_USE_BINDINGS_CPP true CACHE BOOL "Compile the CPP bindings")
 SET(ONION_POLLER default CACHE string "Default poller to use: default | epoll | libev | libevent")
 ########
 
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/CMakeModules")
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/CMakeModules")
 
 execute_process(
 	COMMAND "${CMAKE_CURRENT_SOURCE_DIR}/git-version-gen" "${CMAKE_CURRENT_SOURCE_DIR}"
